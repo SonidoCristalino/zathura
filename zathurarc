@@ -1,0 +1,15 @@
+# To search new commands, please visit:
+# 1. man zathurarc
+# 2. https://gist.github.com/michaelmrose/9595075b43f24aa903fa
+
+set selection-clipboard clipboard
+set font "inconsolata 12"
+set adjust-open "best-fit"
+
+# Set f to fullscreen
+unmap f
+map f toggle_fullscreen
+
+# This new search mapping maybe crash with default vim movement 
+# unmap <C-f>
+# map <C-f> search
