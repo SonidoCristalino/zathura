@@ -2,25 +2,32 @@
 # 1. man zathurarc
 # 2. https://gist.github.com/michaelmrose/9595075b43f24aa903fa
 
-set font "inconsolata 12"
+#
+# Startup options
+# ===============
+#
+
 # set adjust-open "best-fit"
 
-# Set f to fullscreen
-unmap f
-map f toggle_fullscreen
+set font "inconsolata 12"           # Command Line Font size
+set window-title-basename "true"    # To set basename title
+set selection-clipboard "clipboard" # To Copy text into SO clipboard
+set scroll-step 20                  # To move between 20 lines
 
-set window-title-basename "true"
-set selection-clipboard "clipboard"
+# Set f to fullscreen
+unmap f                             # First unmap f keystroke
+map f toggle_fullscreen             # Then use f to map fullscreen function
 
 # This new search mapping maybe crash with default vim movement 
 # unmap <C-f>
 # map <C-f> search
 
-# Dracula color theme for Zathura (use <C-r> to toogle)
-# Swaps Foreground for Background to get a light version if the user prefers
-
 #
 # Dracula color theme
+# ===================
+# 
+# Dracula color theme for Zathura (use <C-r> to toogle)
+# Swaps Foreground for Background to get a light version if the user prefers
 #
 
 set notification-error-bg       rgba(255,85,85,1)     # Red
@@ -63,9 +70,4 @@ set render-loading-bg           rgba(248,248,242,1)   # Foreground
 
 set recolor-lightcolor          rgba(40,42,54,1)      # Background
 set recolor-darkcolor           rgba(248,248,242,1)   # Foreground
-
-#
-# Startup options
-#
-# set adjust-open width
 set recolor true
