@@ -11,27 +11,30 @@ set adjust-open "best-fit"
 set font "inconsolata 12"           # Command Line Font size
 set window-title-basename "true"    # To set basename title
 set selection-clipboard "clipboard" # To Copy text into SO clipboard
-# set scroll-step 20                  # To move between 20 lines
 
 #
 # Mapping keys
-# ===============
+# ============
 #
 
-map [normal]     f toggle_fullscreen # Set fullscreen
+map [normal]     f toggle_fullscreen  # Set fullscreen
 map [fullscreen] f toggle_fullscreen
-map [normal]     b toggle_statusbar  # Show or hide Status bar
+map [normal]     b toggle_statusbar   # Show or hide Status bar
 map [fullscreen] b toggle_statusbar
-map [normal]     m mark_add          # Add quickmark
+map [normal]     m mark_add           # Add quickmark
 map [fullscreen] m mark_add
-map [normal]     M mark_evaluate     # Go to quickmark
+map [normal]     M mark_evaluate      # Go to quickmark
 map [fullscreen] M mark_evaluate 
-map [normal]     d                   # Remove d keybinding
-map [fullscreen] d                   # Remove d keybinding
-map [normal]     u scroll half-up    # Half scrolling using only u and d
+map [normal]     d                    # Remove d keybinding
+map [fullscreen] d                    # Remove d keybinding
+map [normal]     u scroll half-up     # Half scrolling using only u and d
 map [normal]     d scroll half-down
 map [fullscreen] u scroll half-up
 map [fullscreen] d scroll half-down
+# map [normal]     <C-f>                # Remove <C-f> keybinding
+# map [fullscreen] <C-f>                # Remove <C-f> keybinding
+# map [normal]     <C-f> search forward # Search some word
+# map [fullscreen] <C-f> search forward # Search some word
 
 #
 # Dracula color theme
